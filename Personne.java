@@ -12,8 +12,8 @@ public abstract class Personne {
     /* Prénom de la personne */
     protected String prenom;
     /* Paramètre de l'axe sociétal du "pouvoir d'achat" */
-    protected double paramAxe1;
-    protected double paramAxe2;
+    protected double p1;
+    protected double p2;
 
     /**
      * Méthode qui définit ce qui sera affiché lorsque l'on affichera la personne
@@ -21,7 +21,7 @@ public abstract class Personne {
      * @return la description de la personne
      */
     public String toString() {
-        return "Nom : " + this.nom + " Prénom : " + this.prenom + " Axe : [" + this.paramAxe1 + "," + this.paramAxe2
+        return "Nom : " + this.nom + " Prénom : " + this.prenom + " Axe : [" + this.p1 + "," + this.p2
                 + "]";
     }
 
@@ -30,14 +30,14 @@ public abstract class Personne {
      * 
      * @param nom    de la personne
      * @param prenom de la personne
-     * @param d      paramètre 1 de l'axe sociétal de la personne
-     * @param e      paramètre 2 de l'axe sociétal de la personne
+     * @param p1     paramètre 1 de l'axe sociétal de la personne
+     * @param p2     paramètre 2 de l'axe sociétal de la personne
      */
-    public Personne(String nom, String prenom, double d, double e) {
+    public Personne(String nom, String prenom, double p1, double p2) {
         this.nom = nom;
         this.prenom = prenom;
-        this.paramAxe1 = d;
-        this.paramAxe2 = e;
+        this.p1 = p1;
+        this.p2 = p2;
     }
 
 }
