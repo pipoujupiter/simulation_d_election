@@ -1,8 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        Personne p = new Personne("Morin", "Alice");
-        Personne p1 = new Personne("Valembois", "Auxane");
+        Electeur p = new Electeur("Morin", "Alice");
+        Electeur p1 = new Electeur("Valembois", "Auxane");
         System.out.println(p1);
     }
 

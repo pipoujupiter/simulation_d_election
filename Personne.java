@@ -1,25 +1,18 @@
-import java.util.Vector;
 
 /**
- * Classe représentant une personne
+ * Classe abstraite représentant une personne
  * 
  * @author Morin Alice
  */
 
-public class Personne {
-    /*
-     * attribut de classe qui permet de garantir l'unicité du numéro à travers les
-     * personnes
-     */
-    private static int NUMERO = 1;
-    /* attribut rajouté pour avoir un numéro de la personne */
-    private int numero;
+public abstract class Personne {
+
     /* Nom de la personne */
-    private String nom;
+    protected String nom;
     /* Prénom de la personne */
-    private String prenom;
+    protected String prenom;
     /* Axe sociétal du "pouvoir d'achat" */
-    private int axe[] = new int[2];
+    protected int axe[] = new int[2];
 
     /**
      * Méthode qui définit ce qui sera affiché lorsque l'on affichera la personne
@@ -27,7 +20,7 @@ public class Personne {
      * @return la description de la personne
      */
     public String toString() {
-        return "Nom : " + this.nom + " Prénom : " + this.prenom + " Numéro de la personne : " + this.numero;
+        return "Nom : " + this.nom + " Prénom : " + this.prenom;
     }
 
     /**
@@ -40,11 +33,6 @@ public class Personne {
     public Personne(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
-
-        /* on récupère le numéro de classe et on l'incrémente */
-        this.numero = Personne.NUMERO;
-        Personne.NUMERO++;
-
     }
 
 }
