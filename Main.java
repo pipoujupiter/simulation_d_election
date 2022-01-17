@@ -1,15 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        Electeur p = new Electeur("Morin", "Alice");
-        Electeur p1 = new Electeur("Valembois", "Auxane");
+        Electeur p = new Electeur();
+        Electeur p1 = new Electeur();
 
         Candidat c = new Candidat("Monsieur", "Président");
 
-        System.out.println(p1);
-        System.out.println(p);
-        System.out.println(c);
-
+        p.affElecteurs();
+        p1.affElecteurs();
+        c.affCandidat();
     }
 
 }

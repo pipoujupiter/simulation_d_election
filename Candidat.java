@@ -4,20 +4,28 @@
  * @author Morin Alice
  */
 
-public class Candidat extends Personne {
+public class Candidat extends Electeur {
 
+    /* Nom de la personne */
+    private String nom;
+    /* Prénom de la personne */
+    private String prenom;
     /* Nombre de voix pour le candidat */
     private int nombreVoix;
 
     /**
-     * Le constructeur présent sur le diagramme
+     * Méthode d'affichage des données du candidat
      * 
-     * @param nom    de la personne
-     * @param prenom de la personne
+     * @return données du candidat
      */
-
-    public Candidat(String nom, String prenom) {
-        super(nom, prenom);
+    public void affCandidat() {
+        System.out.println(" Numéro électeur : " + numeroelecteur);
+        System.out.println("Nom : " + nom + " Prénom : " + prenom);
+        System.out.print("Axe : [");
+        for (int i = 0; i < 2; i++) {
+            System.out.print(axe[i] + " ");
+        }
+        System.out.print("]");
     }
 
     /**
@@ -38,4 +46,15 @@ public class Candidat extends Personne {
         return this.nombreVoix;
     }
 
+    /**
+     * Le constructeur présent sur le diagramme
+     * 
+     * @param nom    de la personne
+     * @param prenom de la personne
+     */
+
+    public Candidat(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
 }
