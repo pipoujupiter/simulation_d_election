@@ -20,7 +20,7 @@ public class Scrutin {
             checkaxe[i] = Math.abs(e.getAxe(i) - c.getAxe(i));
             System.out.println("checkaxe :" + checkaxe[i]);
         }
-        if (checkaxe[0] <= 2 * 0.05 && checkaxe[1] <= 2 * 0.05) {
+        if (checkaxe[0] <= 0.1 && checkaxe[1] <= 0.1) {
             c.setNombreVoix(c.getNombreVoix() + 1);
             return true;
         } else
