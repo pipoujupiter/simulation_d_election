@@ -29,8 +29,21 @@ public class Electeur {
         for (int i = 0; i < 2; i++) {
             System.out.print(axe[i] + " ");
         }
-        System.out.print("]");
+        System.out.println("]");
 
+    }
+
+    /**
+     * Méthode pour accéder à une valeur de l'axe societal
+     * 
+     * @param i
+     * @return valeur de l'axe
+     */
+    public float getAxe(int i) {
+        if (i < 2 && i >= 0) {
+            return axe[i];
+        } else
+            return 100;
     }
 
     /**

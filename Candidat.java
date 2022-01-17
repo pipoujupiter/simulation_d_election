@@ -29,19 +29,6 @@ public class Candidat extends Electeur {
     }
 
     /**
-     * Méthode pour accéder à une valeur de l'axe societal
-     * 
-     * @param i
-     * @return valeur de l'axe
-     */
-    public float getAxe(int i) {
-        if (i < 2 && i >= 0) {
-            return axe[i];
-        } else
-            return 100;
-    }
-
-    /**
      * Méthode pour set le nombre de voix pour le candidat
      * 
      * @param nombreVoix
