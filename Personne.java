@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /**
  * Classe abstraite représentant une personne
@@ -11,9 +12,23 @@ public abstract class Personne {
     protected String nom;
     /* Prénom de la personne */
     protected String prenom;
-    /* Paramètre de l'axe sociétal du "pouvoir d'achat" */
-    protected double p1;
-    protected double p2;
+    /* Axe societal de la personne */
+    protected float axe[] = new float[2];
+
+    /**
+     * Méthode qui initialise au hasard les axes des personnes
+     * 
+     * @return
+     */
+    public void initAxes() {
+        for (int i = 0; i < 2; i++) {
+            Random random = new Random();
+            float nb;
+            nb = random.nextInt(11);
+            nb = nb / 10;
+            axe[i] = nb;
+        }
+    }
 
     /**
      * Méthode qui définit ce qui sera affiché lorsque l'on affichera la personne
@@ -21,8 +36,7 @@ public abstract class Personne {
      * @return la description de la personne
      */
     public String toString() {
-        return "Nom : " + this.nom + " Prénom : " + this.prenom + " Axe : [" + this.p1 + "," + this.p2
-                + "]";
+        return "Nom : " + this.nom + " Prénom : " + this.prenom + " Axe : [" + this.axe[0] + "," + this.axe[1] + "]";
     }
 
     /**
@@ -30,14 +44,12 @@ public abstract class Personne {
      * 
      * @param nom    de la personne
      * @param prenom de la personne
-     * @param p1     paramètre 1 de l'axe sociétal de la personne
-     * @param p2     paramètre 2 de l'axe sociétal de la personne
      */
-    public Personne(String nom, String prenom, double p1, double p2) {
+
+    public Personne(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
-        this.p1 = p1;
-        this.p2 = p2;
+        initAxes();
     }
 
 }

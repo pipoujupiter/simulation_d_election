@@ -19,12 +19,10 @@ public class Electeur extends Personne {
      * 
      * @param nom    de la personne
      * @param prenom de la personne
-     * @param p1     paramètre 1 de l'axe sociétal de la personne
-     * @param p2     paramètre 2 de l'axe sociétal de la personne
      */
 
-    public Electeur(String nom, String prenom, double p1, double p2) {
-        super(nom, prenom, p1, p2);
+    public Electeur(String nom, String prenom) {
+        super(nom, prenom);
 
         this.numeroelecteur = Electeur.NUMERO;
         Electeur.NUMERO++;
