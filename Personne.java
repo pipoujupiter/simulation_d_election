@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Classe abstraite représentant une personne
+ * Classe abstraite représentant une personne test
  * 
  * @author Morin Alice
  */
