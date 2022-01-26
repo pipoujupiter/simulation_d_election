@@ -25,7 +25,7 @@ public class Interface {
 
                     // Scrutin
                     case 1:
-                        System.out.println("Test");
+                        System.out.println("Test 1");
 
                         // Quitter
                     default:
