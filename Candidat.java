@@ -29,7 +29,7 @@ public class Candidat extends Electeur {
     }
 
     /**
-     * Méthode pour set le nombre de voix pour le candidat
+     * Méthode pour modifier le nombre de voix pour le candidat
      * 
      * @param nombreVoix
      */
@@ -47,14 +47,22 @@ public class Candidat extends Electeur {
     }
 
     /**
-     * Le constructeur présent sur le diagramme
+     * Méthode d'initialisation du Candidat à 0 voix
      * 
-     * @param nom    de la personne
-     * @param prenom de la personne
      */
-
-    public Candidat(String nom, String prenom) {
-        this.nom = nom;
-        this.prenom = prenom;
+    public void initCandidat() {
+        this.setNombreVoix(0);
     }
+
+    // /**
+    // * Le constructeur présent sur le diagramme
+    // *
+    // * @param nom de la personne
+    // * @param prenom de la personne
+    // */
+
+    // public Candidat(String nom, String prenom) {
+    // this.nom = nom;
+    // this.prenom = prenom;
+    // }
 }
