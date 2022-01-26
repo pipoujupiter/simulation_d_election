@@ -1,3 +1,5 @@
+package projet_apo;
+
 import java.util.Random;
 
 /**

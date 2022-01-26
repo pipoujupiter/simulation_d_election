@@ -1,3 +1,5 @@
+package projet_apo;
+
 /**
  * Classe représentant un scrutin
  * 
