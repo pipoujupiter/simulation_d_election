@@ -11,7 +11,7 @@ import java.util.Random;
 public class Electeur {
 
     /* Axe societal de la personne */
-    protected float axe[] = new float[2];
+    protected double axe[] = new double[2];
     /*
      * attribut de classe qui permet de garantir l'unicité du numéro à travers les
      * personnes
@@ -41,7 +41,7 @@ public class Electeur {
      * @param i
      * @return valeur de l'axe
      */
-    public float getAxe(int i) {
+    public double getAxe(int i) {
         if (i < 2 && i >= 0) {
             return axe[i];
         } else

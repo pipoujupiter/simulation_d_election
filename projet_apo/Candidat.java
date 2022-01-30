@@ -55,16 +55,4 @@ public class Candidat extends Electeur {
     public void initCandidat() {
         this.setNombreVoix(0);
     }
-
-    // /**
-    // * Le constructeur présent sur le diagramme
-    // *
-    // * @param nom de la personne
-    // * @param prenom de la personne
-    // */
-
-    // public Candidat(String nom, String prenom) {
-    // this.nom = nom;
-    // this.prenom = prenom;
-    // }
 }
