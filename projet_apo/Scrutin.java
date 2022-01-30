@@ -3,7 +3,7 @@ package projet_apo;
 /**
  * Classe représentant un scrutin
  * 
- * @author Morin Alice
+ * @author Morin Alice basé sur le travail de Anthony Gonzalez.
  */
 
 public class Scrutin {
