@@ -6,7 +6,7 @@ package projet_apo;
  * @author Morin Alice
  */
 
-public class ScrutinMajoritaireDeuxTours extends ScrutinMajoritaireUnTour {
+public class ScrutinMajoritaireDeuxTours extends Scrutin {
 
     /**
      * Méthode qui effectue un scrutin majoritaire à 2 tours
