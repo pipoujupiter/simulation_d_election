@@ -1,0 +1,7 @@
+Quand l’utilisateur ouvre l’interface il peut la quitter, initialiser des électeurs, des candidats, faire une élection, ou faire évoluer les axes. 
+Les axes des candidats et électeurs sont représentés par des vecteurs générés lors de l'initialisation des électeurs et candidats. 
+Pour faire une évolution des axes et faire une élection, ils doivent avoir été initialisés pour les électeurs et les candidats. 
+Faire évoluer un sondage peut se faire de 3 manières différentes, par un sondage 1, un sondage 2 ou par interactions sociopolitiques, un résultat de sondage peut être affiché.
+Le sondage 1 consiste à déplacer un électeur vers le candidat le plus proche de ses préférences parmi les n premiers candidats du sondage.
+Le sondage 2 consiste à calculer une utilité pour chaque candidat en multipliant sa préférence par son pourcentage de voix dans le sondage, l'électeur va alors se déplacer vers le candidat ayant l'utilité la plus élevée
+Effectuer une élection se fait par scrutin, il y en a 5 différents, le vote par approbation, le scrutin majoritaire en 1 tour, le scrutin majoritaire en 2 tours, le vote alternatif et la méthode de Borda. Le résultat d’une élection est toujours affiché. 
