@@ -29,7 +29,7 @@ public class ScrutinMajoritaireUnTour extends Scrutin {
             }
 
         }
-        pourcentage = (double) (this.listeElectoralle[Vote].getNombreVoix() * 100) / nombreElecteurs;
+        pourcentage = (this.listeElectoralle[Vote].getNombreVoix() * 100) / nombreElecteurs;
         System.out.println(
                 "Le candidat " + Vote + " est le nouveau Président. Il a remporté l'élection avec  " + pourcentage
                         + "% des voix.");
