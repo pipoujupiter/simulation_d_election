@@ -1,3 +1,6 @@
 # Projet_apo
 
-Tolérance de 15% pour voter pour le candidat, peut être l'augmenter un peu ?
+Projet de modélisation de systèmes électoraux et dynamiques de vote.
+Réalisé par Morin Alice & Valembois Auxane.
+
+Lien du git : https://forge.univ-lyon1.fr/p2111041/projet_apo
