@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"projet_apo","l":"Candidat"},{"p":"projet_apo","l":"Electeur"},{"p":"projet_apo","l":"Interface"},{"p":"projet_apo","l":"Main"},{"p":"projet_apo","l":"Scrutin"},{"p":"projet_apo","l":"ScrutinMajoritaireDeuxTours"},{"p":"projet_apo","l":"ScrutinMajoritaireUnTour"}];updateSearchResults();
