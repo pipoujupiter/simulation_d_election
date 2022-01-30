@@ -5,6 +5,7 @@ package projet_apo;
  * 
  * @author Morin Alice
  */
+
 public class Interface {
     public void IMH() {
         try (java.util.Scanner input = new java.util.Scanner(System.in)) {
@@ -25,9 +26,13 @@ public class Interface {
 
                     // Scrutin
                     case 1:
-                        System.out.println("Test 1");
+                        ScrutinMajoritaireUnTour S1 = new ScrutinMajoritaireUnTour();
+                        S1.setCandidat(nombreC);
+                        S1.setElecteur(nombreE);
+                        S1.Président();
+                        break;
 
-                        // Quitter
+                    // Quitter
                     default:
                         continuer = false;
                         break;
